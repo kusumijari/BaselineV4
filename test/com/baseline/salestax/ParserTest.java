@@ -98,4 +98,11 @@ public class ParserTest {
 
         assertEquals("packet of headache pills", parser.extractName());
     }
+
+    @Test
+    public void shouldExtractPrice() {
+        Parser parser = new Parser("1 book at 12.49");
+
+        assertEquals(12.49, parser.extractPrice(), 0.05);
+    }
 }

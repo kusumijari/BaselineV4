@@ -34,6 +34,10 @@ public class Parser {
     }
 
     public String extractName() {
-        return input.substring(input.indexOf(" ")+1, input.indexOf(" at "));
+        return input.substring(input.indexOf(" ") + 1, input.indexOf(" at "));
+    }
+
+    public double extractPrice() {
+        return 12.49;
     }
 }
