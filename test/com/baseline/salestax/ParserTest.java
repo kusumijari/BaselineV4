@@ -2,6 +2,7 @@ package com.baseline.salestax;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -75,5 +76,12 @@ public class ParserTest {
         Parser parser = new Parser("book");
 
         assertFalse(parser.containsImported());
+    }
+
+    @Test
+    public void shouldExtractQuantityFromTheString() {
+        Parser parser = new Parser("1 book");
+
+        assertEquals(1, parser.extractQuantity());
     }
 }

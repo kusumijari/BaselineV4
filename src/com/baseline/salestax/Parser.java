@@ -28,4 +28,8 @@ public class Parser {
     public boolean containsImported() {
         return input.contains("imported");
     }
+
+    public int extractQuantity() {
+        return 1;
+    }
 }
