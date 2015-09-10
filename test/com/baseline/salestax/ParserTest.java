@@ -100,9 +100,16 @@ public class ParserTest {
     }
 
     @Test
-    public void shouldExtractPrice() {
+    public void shouldExtractPriceFromInputOfPrice12() {
         Parser parser = new Parser("1 book at 12.49");
 
         assertEquals(12.49, parser.extractPrice(), 0.05);
+    }
+
+    @Test
+    public void shouldExtractPriceFromInputOfPrice9() {
+        Parser parser = new Parser("1 book at 9.75");
+
+        assertEquals(9.75, parser.extractPrice(), 0.05);
     }
 }

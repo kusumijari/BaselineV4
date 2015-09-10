@@ -38,6 +38,6 @@ public class Parser {
     }
 
     public double extractPrice() {
-        return 12.49;
+        return Double.parseDouble(input.substring(input.indexOf(" at ") + 4));
     }
 }
