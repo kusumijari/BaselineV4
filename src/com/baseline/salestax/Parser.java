@@ -30,6 +30,6 @@ public class Parser {
     }
 
     public int extractQuantity() {
-        return 1;
+        return Integer.parseInt(input.split(" ")[0]);
     }
 }
