@@ -91,4 +91,11 @@ public class ParserTest {
 
         assertEquals("book", parser.extractString());
     }
+
+    @Test
+    public void shouldExtractItemNameFromTheInputStringContainingPill() {
+        Parser parser = new Parser("1 packet of headache pills at 9.75");
+
+        assertEquals("packet of headache pills", parser.extractString());
+    }
 }

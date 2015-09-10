@@ -34,6 +34,6 @@ public class Parser {
     }
 
     public String extractString() {
-        return "book";
+        return input.substring(input.indexOf(" ")+1, input.indexOf(" at "));
     }
 }
