@@ -16,4 +16,8 @@ public class Parser {
     public boolean containsChocolate() {
         return input.contains("chocolate");
     }
+
+    public boolean containsPill() {
+        return true;
+    }
 }

@@ -35,4 +35,10 @@ public class ParserTest {
         assertFalse(parser.containsChocolate());
     }
 
+    @Test
+    public void shouldReturnTrueIfInputContainsPill() {
+        Parser parser = new Parser("pill");
+
+        assertTrue(parser.containsPill());
+    }
 }
