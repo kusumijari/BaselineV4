@@ -55,4 +55,11 @@ public class ParserTest {
 
         assertTrue(parser.containsBookOrPillOrMedicine());
     }
+
+    @Test
+    public void shouldReturnFalseIfInputDoesNotContainBookOrPillOrChocholate() {
+        Parser parser = new Parser("perfume");
+
+        assertFalse(parser.containsBookOrPillOrMedicine());
+    }
 }
