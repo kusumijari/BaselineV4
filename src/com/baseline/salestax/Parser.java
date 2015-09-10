@@ -15,4 +15,8 @@ public class Parser {
         }
         return true;
     }
+
+    public boolean containsChocolate() {
+        return true;
+    }
 }
