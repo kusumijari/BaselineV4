@@ -20,4 +20,8 @@ public class Parser {
     public boolean containsPill() {
         return input.contains("pill");
     }
+
+    public boolean containsBookOrPillOrMedicine() {
+        return true;
+    }
 }
