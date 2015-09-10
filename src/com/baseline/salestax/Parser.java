@@ -5,19 +5,19 @@ package com.baseline.salestax;
 public class Parser {
     private String input;
 
-    public Parser(String input) {
+    private Parser(String input) {
         this.input = input;
     }
 
-    public boolean containsBook() {
+    private boolean containsBook() {
         return input.contains("book");
     }
 
-    public boolean containsChocolate() {
+    private boolean containsChocolate() {
         return input.contains("chocolate");
     }
 
-    public boolean containsPill() {
+    private boolean containsPill() {
         return input.contains("pill");
     }
 
