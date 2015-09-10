@@ -24,4 +24,8 @@ public class Parser {
     public boolean containsBookOrPillOrChocolate() {
         return ((containsBook() || containsPill() || containsChocolate()));
     }
+
+    public boolean containsImported() {
+        return true;
+    }
 }
