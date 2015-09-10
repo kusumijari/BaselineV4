@@ -42,6 +42,6 @@ public class Parser {
     }
 
     public Item createItem() {
-        return new Item(extractQuantity(), extractName(), extractPrice());
+        return new Item(extractQuantity(), extractName(), extractPrice(), containsBookOrPillOrChocolate(), containsImported());
     }
 }
