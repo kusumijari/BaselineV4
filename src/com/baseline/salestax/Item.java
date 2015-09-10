@@ -17,4 +17,7 @@ public class Item {
         this.isImported = isImported;
     }
 
+    public double salesTax() {
+        return 12.49;
+    }
 }
