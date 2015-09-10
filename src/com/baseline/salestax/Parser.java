@@ -9,19 +9,19 @@ public class Parser {
         this.input = input;
     }
 
-    public boolean containsBook() {
+    private boolean containsBook() {
         return input.contains("book");
     }
 
-    public boolean containsChocolate() {
+    private boolean containsChocolate() {
         return input.contains("chocolate");
     }
 
-    public boolean containsPill() {
+    private boolean containsPill() {
         return input.contains("pill");
     }
 
-    public boolean containsBookOrPillOrMedicine() {
+    public boolean containsBookOrPillOrChocolate() {
         return ((containsBook() || containsPill() || containsChocolate()));
     }
 }

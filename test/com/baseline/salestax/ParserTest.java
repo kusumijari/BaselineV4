@@ -11,55 +11,55 @@ public class ParserTest {
     public void shouldReturnTrueIfInputContainsBook() {
         Parser parser = new Parser("book");
 
-        assertTrue(parser.containsBook());
+        assertTrue(parser.containsBookOrPillOrChocolate());
     }
 
     @Test
     public void shouldReturnFalseIfInputDoesNotContainABook() {
         Parser parser = new Parser("medicine");
 
-        assertFalse(parser.containsBook());
+        assertFalse(parser.containsBookOrPillOrChocolate());
     }
 
     @Test
     public void shouldReturnTrueIfInputContainsChocolate() {
         Parser parser = new Parser("chocolate");
 
-        assertTrue(parser.containsChocolate());
+        assertTrue(parser.containsBookOrPillOrChocolate());
     }
 
     @Test
     public void shouldReturnFalseIfInputDoesNotContainChocolate() {
         Parser parser = new Parser("medicine");
 
-        assertFalse(parser.containsChocolate());
+        assertFalse(parser.containsBookOrPillOrChocolate());
     }
 
     @Test
     public void shouldReturnTrueIfInputContainsPill() {
         Parser parser = new Parser("pill");
 
-        assertTrue(parser.containsPill());
+        assertTrue(parser.containsBookOrPillOrChocolate());
     }
 
     @Test
     public void shouldReturnFalseIfInputDoesNotContainPill() {
         Parser parser = new Parser("medicine");
 
-        assertFalse(parser.containsChocolate());
+        assertFalse(parser.containsBookOrPillOrChocolate());
     }
 
     @Test
     public void shouldReturnTrueIfInputContainsBookOrPillOrChocholate() {
         Parser parser = new Parser("pill");
 
-        assertTrue(parser.containsBookOrPillOrMedicine());
+        assertTrue(parser.containsBookOrPillOrChocolate());
     }
 
     @Test
     public void shouldReturnFalseIfInputDoesNotContainBookOrPillOrChocholate() {
         Parser parser = new Parser("perfume");
 
-        assertFalse(parser.containsBookOrPillOrMedicine());
+        assertFalse(parser.containsBookOrPillOrChocolate());
     }
 }
