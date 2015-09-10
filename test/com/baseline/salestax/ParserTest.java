@@ -70,5 +70,10 @@ public class ParserTest {
         assertTrue(parser.containsImported());
     }
 
+    @Test
+    public void shouldReturnFalseIfInputDoesNotContainImported() {
+        Parser parser = new Parser("book");
 
+        assertFalse(parser.containsImported());
+    }
 }

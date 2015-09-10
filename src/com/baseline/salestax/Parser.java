@@ -26,6 +26,6 @@ public class Parser {
     }
 
     public boolean containsImported() {
-        return true;
+        return input.contains("imported");
     }
 }
