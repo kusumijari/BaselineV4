@@ -79,9 +79,16 @@ public class ParserTest {
     }
 
     @Test
-    public void shouldExtractQuantityFromTheString() {
+    public void shouldExtractQuantityFromTheInputString() {
         Parser parser = new Parser("1 book");
 
         assertEquals(1, parser.extractQuantity());
+    }
+
+    @Test
+    public void shouldExtractItemNameFromTheInputStringContainingBook() {
+        Parser parser = new Parser("1 book at 12.49");
+
+        assertEquals("book", parser.extractString());
     }
 }

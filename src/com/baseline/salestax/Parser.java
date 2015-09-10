@@ -32,4 +32,8 @@ public class Parser {
     public int extractQuantity() {
         return Integer.parseInt(input.split(" ")[0]);
     }
+
+    public String extractString() {
+        return "book";
+    }
 }
