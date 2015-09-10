@@ -10,10 +10,7 @@ public class Parser {
     }
 
     public boolean containsBook() {
-        if(!input.contains("book")){
-            return false;
-        }
-        return true;
+        return input.contains("book");
     }
 
     public boolean containsChocolate() {
