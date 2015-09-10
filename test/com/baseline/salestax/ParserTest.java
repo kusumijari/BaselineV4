@@ -89,13 +89,13 @@ public class ParserTest {
     public void shouldExtractItemNameFromTheInputStringContainingBook() {
         Parser parser = new Parser("1 book at 12.49");
 
-        assertEquals("book", parser.extractString());
+        assertEquals("book", parser.extractName());
     }
 
     @Test
     public void shouldExtractItemNameFromTheInputStringContainingPill() {
         Parser parser = new Parser("1 packet of headache pills at 9.75");
 
-        assertEquals("packet of headache pills", parser.extractString());
+        assertEquals("packet of headache pills", parser.extractName());
     }
 }

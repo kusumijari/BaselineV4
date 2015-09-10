@@ -33,7 +33,7 @@ public class Parser {
         return Integer.parseInt(input.split(" ")[0]);
     }
 
-    public String extractString() {
+    public String extractName() {
         return input.substring(input.indexOf(" ")+1, input.indexOf(" at "));
     }
 }
