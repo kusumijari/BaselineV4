@@ -18,6 +18,12 @@ public class Item {
     }
 
     public double salesTax() {
-        return 12.49;
+        if(isBookFoodMedicine) {
+            if(!isImported) {
+                return price;
+            }
+        }
+
+        return 16.489;
     }
 }
