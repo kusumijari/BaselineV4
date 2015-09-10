@@ -1,4 +1,4 @@
-//Receives input and parses it
+//Receives input and parses it to create an item object
 
 package com.baseline.salestax;
 
@@ -39,5 +39,9 @@ public class Parser {
 
     public double extractPrice() {
         return Double.parseDouble(input.substring(input.indexOf(" at ") + 4));
+    }
+
+    public Item createItem() {
+        return new Item(extractQuantity(), extractName(), extractPrice());
     }
 }

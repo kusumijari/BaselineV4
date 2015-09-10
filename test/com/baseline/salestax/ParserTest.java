@@ -112,4 +112,11 @@ public class ParserTest {
 
         assertEquals(9.75, parser.extractPrice(), 0.05);
     }
+
+    @Test
+    public void shouldCreateItemObject() {
+        Parser parser = new Parser("1 book at 9.745");
+
+        assertEquals(Item.class, parser.createItem().getClass());
+    }
 }
