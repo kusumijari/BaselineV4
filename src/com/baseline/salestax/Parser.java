@@ -18,6 +18,6 @@ public class Parser {
     }
 
     public boolean containsPill() {
-        return true;
+        return input.contains("pill");
     }
 }
